@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Hawen Jewellers</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- Welcome Top Bar -->
+  <div class="top-message">
+    Welcome to Jewellery online store
+  </div>
+
+  <!-- Main Header -->
+  <header class="main-header">
+    <div class="container">
+
+      <!-- Logo -->
+      <div class="logo">
+        <img src="C:\Users\Lenovo\OneDrive\Desktop\project web\photo\LOGO.jpg" alt="Haven Jewellers Logo" />
+      </div>
+
+      <!-- Hamburger Menu (mobile) -->
+      <div class="menu-toggle" id="menu-toggle">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+
+      <!-- Navigation Menu -->
+      <nav class="main-nav" id="main-nav">
+        <ul class="nav-links">
+          <li><a class="active" href="#">Home</a></li>
+          <li><a href="categories.html">Category</a></li>
+          <li><a href="Product.html">Products</a></li>
+          <li><a href="Teatimonials.html">Testimonials</a></li>
+          <li><a href="Blog.html">Blog</a></li>
+        </ul>
+      </nav>
+
+      <!-- Icons -->
+      <div class="nav-icons">
+        <a href="search.html"><i class="fa-solid fa-magnifying-glass"></i></a>
+        <a href="signup.html"><i class="fa-solid fa-user"></i></a>
+        <a href="Cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+      </div>
+
+    </div>
+  </header>
+
+  <script>
+    const toggle = document.getElementById("menu-toggle");
+    const nav = document.getElementById("main-nav");
+    toggle.addEventListener("click", () => {
+      nav.classList.toggle("active");
+    });
+  </script>
+<!-- Hero Section -->
+<section class="hero">
+  <div class="hero-content">
+    <div class="hero-text">
+      <h1> Traditional Jewellery Collection</h1>
+      <p>Designer Jewelry, Necklaces, Bangles, Earrings</p>
+      <a href="Product.html" class="shop-btn">Shop Now</a>
+    </div>
+    <div class="hero-image">
+      <img src="C:\Users\Lenovo\OneDrive\Desktop\project web\banner.png"alt="Jewelry Banner"/>
+    </div>
+  
+</section>
+ 
+<!-- Info Section -->
+<section class="info-section">
+  <div class="info-box">
+    <img src="C:\Users\Lenovo\OneDrive\Desktop\project web\icon shipping.jpeg" alt="Free Shipping" />
+    <div>
+      <h4>Free Shipping</h4>
+      
+    </div>
+  </div>
+  <div class="info-box">
+    <img src="C:\Users\Lenovo\OneDrive\Desktop\project web\support.webp" alt="Support 24/7" />
+    <div>
+      <h4>Support 24/7</h4>
+      
+    </div>
+  </div>
+  <div class="info-box">
+    <img src="C:\Users\Lenovo\OneDrive\Desktop\project web\payment.avif" alt="Payment Secure" />
+    <div>
+      <h4>100% Payment Secure</h4>
+  
+</section>
+<!-- Jewelry Collection Section -->
+<section class="jewelry-collection">
+  <img src="C:\Users\Lenovo\OneDrive\Desktop\project web\photo\collection jewllary.jpg" alt="Jewelry Collection" />
+</section>
+<!-- Our Products Title -->
+<section class="our-products">
+  <h2>Our Products</h2>
+</section>
+    <div class="product-container">
+      <div class="product-card">
+        <img src="C:\Users\Lenovo\OneDrive\Desktop\project web\Product\1.jpg" alt="silver polish short Necklaces">
+        <button class="add-to-cart" data-name="silver polish short neckless">Add to Cart</button>
+        <p>Silver polish short Necklaces</p>
+        <span>50,000</span>
+      </div>
+      <div class="product-card">
+        <img src="C:\Users\Lenovo\OneDrive\Desktop\project web\Product\2.jpg" alt="Gold Bangle">
+        <button class="add-to-cart" data-name="Gold Bangle">Add to Cart</button>
+        <p>Gold Bangle</p>
+        <span>75,000</span>
+      </div>
+      <div class="product-card">
+        <img src="C:\Users\Lenovo\OneDrive\Desktop\project web\Product\3.jpg" alt="Gold Diamond ring">
+        <button class="add-to-cart" data-name="Gold Diamond ring">Add to Cart</button>
+        <p>Gold Diamond Ring</p>
+        <span>60,000</span>
+      </div>
+      <div class="product-card">
+        <img src="C:\Users\Lenovo\OneDrive\Desktop\project web\Product\4.jpg" alt="White Earring">
+        <button class="add-to-cart" data-name="White Earring">Add to Cart</button>
+        <p>White Earring</p>
+        <span>15,000</span>
+      </div>
+      <div class="product-card">
+        <img src="C:\Users\Lenovo\OneDrive\Desktop\project web\Product\5.jpg" alt="Men's Gold chain">
+        <button class="add-to-cart" data-name="Men's Gold chain">Add to Cart</button>
+        <p>Men's Gold chain</p>
+        <span>90,000</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Cart Section -->
+  <div id="cart" class="cart">
+    <h3>Your Cart</h3>
+    <ul id="cart-items"></ul>
+  </div>
+
+  <!-- Category Section -->
+<section class="category-section">
+  <div class="category-card">
+    <a href="Rings.html">
+      <img src="C:\Users\Lenovo\OneDrive\Desktop\project web\Product\9.jpg" alt="Rings">
+      <p>RING</p>
+    </a>
+  </div>
+  <div class="category-card">
+    <a href="#">
+      <img src="C:\Users\Lenovo\OneDrive\Desktop\project web\Product\8.jpg" alt="Earrings">
+      <p>EARRINGS</p>
+    </a>
+  </div>
+  <div class="category-card">
+    <a href="Neckless.html">
+      <img src="C:\Users\Lenovo\OneDrive\Desktop\project web\Product\6.jpg" alt="Necklaces">
+      <p>NECKLACES</p>
+    </a>
+  </div>
+  <div class="category-card">
+    <a href="Bangles.html">
+      <img src="C:\Users\Lenovo\OneDrive\Desktop\project web\Product\10.jpg" alt="Bracelets">
+      <p>BRACELETS</p>
+    </a>
+  </div>
+</section>
+<!-- Featured Products Section -->
+<section class="featured-section">
+  <h2>Featured Products</h2>
+  <p class="featured-subtitle">Add featured products to weekly lineup</p>
+</section>
+<!-- Featured Product Grid -->
+<section class="product-grid">
+  <div class="product-card">
+    <img src="C:\Users\Lenovo\OneDrive\Desktop\project web\photo\OIP.jpeg" alt=" Ring">
+    <p>Ring</p>
+    <span>5,000</span>
+  </div>
+  <div class="product-card">
+    <img src="C:\Users\Lenovo\OneDrive\Desktop\project web\photo\OIP (1).jpeg" alt="Earring">
+    <p>Earring</p>
+    <span>4,000</span>
+  </div>
+  <div class="product-card">
+    <img src="C:\Users\Lenovo\OneDrive\Desktop\project web\photo\g.avif" alt="Pandant">
+    <p>Pandant</p>
+    <span>1,500</span>
+  </div>
+  <div class="product-card">
+    <img src="C:\Users\Lenovo\OneDrive\Desktop\project web\photo\gold-chain-with-peacock-pendant.webp" alt="gold-chain-with-peacock-pendant">
+    <p>gold-chain-with-peacock-pendant</p>
+    <span>75,000</span>
+  </div>
+  <div class="product-card">
+    <img src="C:\Users\Lenovo\OneDrive\Desktop\project web\photo\R.jpeg" alt="Diamond heart Pandant">
+    <p>Diamond heart Pandant</p>
+    <span>1,00,000</span>
+  </div>
+  <div class="product-card">
+    <img src="C:\Users\Lenovo\OneDrive\Desktop\project web\photo\a6b0e88zpfk8775__1_.avif" alt="Peacock Earring">
+    <p>Peacock Earring</p>
+    <span>$25,000</span>
+  </div>
+  <div class="product-card">
+    <img src="C:\Users\Lenovo\OneDrive\Desktop\project web\photo\OIP (2).jpeg" alt="Round Earring">
+    <p>Round Earring</p>
+    <span>40,000</span>
+  </div>
+  <div class="product-card">
+    <img src="C:\Users\Lenovo\OneDrive\Desktop\project web\photo\il_fullxfull.1619658842_s3bm.webp" alt="Crystal Bracelet">
+    <button>Add to Cart</button>
+    <p>Crystal Bracelet</p>
+    <span>25,000</span>
+  </div>
+  <div class="product-card">
+    <img src="C:\Users\Lenovo\OneDrive\Desktop\project web\photo\4ec7dc32-fc9d-4816-9c56-bfad89ef0fb0_1.739a60706d621fad07827cdb6688e357.webp" alt="Diamond Ring">
+    <p>Diamond Ring</p>
+    <span>95,000</span>
+  </div>
+  <div class="product-card">
+    <img src="C:\Users\Lenovo\OneDrive\Desktop\project web\photo\OIP (3).jpeg" alt="Gold Hairpin">
+    <p>Gold Hairpin</p>
+    <span>4,500</span>
+  </div>
+</section>
+<section class="testimonials">
+  <h2>Testimonials</h2>
+  <p>What they say</p>
+
+  <div class="testimonial-grid">
+    <div class="testimonial-card">
+      <img src="C:\Users\Lenovo\OneDrive\Desktop\project web\Product\R.jpg" alt="client" />
+      <h3>Raunak </h3>
+      <p class="role">Client</p>
+      <div class="stars">★★★★★</div>
+      <p>beautiful craftsmanship and Design</p>
+    </div>
+
+    <div class="testimonial-card">
+      <img src="C:\Users\Lenovo\OneDrive\Desktop\project web\Product\s.jpg" alt="client" />
+      <h3>Sunil</h3>
+      <p class="role">Client</p>
+      <div class="stars">★★★★★</div>
+      <p>usre freindly interface</p>
+    </div>
+
+    <div class="testimonial-card">
+      <img src="C:\Users\Lenovo\OneDrive\Desktop\project web\Product\h.jpg" alt="client" />
+      <h3>Surbhi</h3>
+      <p class="role">Client</p>
+      <div class="stars">★★★★★</div>
+      <p>"The earrings were just as shown in the picture. Loved the packaging too!"
+</p>
+    </div>
+</section>
+<section class="latest-blogs">
+  <h2>Latest Blogs</h2>
+  <p>There are latest blog posts</p>
+
+  <div class="blog-grid">
+    <div class="blog-card">
+      <img src="C:\Users\Lenovo\OneDrive\Desktop\project web\Product\WhatsApp Image 2025-04-29 at 15.11.35_383da162.jpg" alt="Blog 1">
+      <h3>Bridal Jewallery latest set</h3>
+      <p>If you have already picked your wedding outfit, the next obvious thing to choose in your trousseau is bridal jewellery...... </p>
+    </div>
+
+    <div class="blog-card">
+      <img src="C:\Users\Lenovo\OneDrive\Desktop\project web\Product\goldgf.jpg" alt="Blog 2">
+      <h3>Bridal gold set with jewellery</h3>
+      <p>This beautiful Kundan choker and matching earrings are totally stealing the show of these bridal looks!.......</p>
+    </div>
+
+    <div class="blog-card">
+      <img src="C:\Users\Lenovo\OneDrive\Desktop\project web\Product\gagghhgsg.jpg" alt="Blog 3">
+      <h3>Bridal polki set thats as royal as it gets</h3>
+      <p>Let’s admit it. Nothing looks as royal on a bride as much as a beautiful polki set does!......</p>
+    </div>
+  </div>
+</section>
+<footer class="footer">
+  <div class="footer-container">
+    <div class="footer-about">
+      <h3>Haven JEWELRYS</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+      <div class="footer-socials">
+        <a href="https://www.facebook.com/share/16KTEkqz1m/"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-youtube"></i></a>
+      </div>
+    </div>
+
+    <div class="footer-links">
+      <h4>Main Link's</h4>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Portfolio</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-links">
+      <h4>External Link's</h4>
+      <ul>
+        <li><a href="#">Our Product's</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Disclaimer</a></li>
+        <li><a href="#">Term's and Condition's</a></li>
+      </ul>
+    </div>
+  </div>
+  <p class="footer-bottom">© Copyright 2025 - Going-Internet</p>
+</footer>
+</body>
+</html>
